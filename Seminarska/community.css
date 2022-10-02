@@ -1,0 +1,158 @@
+:root{
+    --clr-primary: #dc545e;
+    --clr-gray:#37474f;
+    --clr-gray-light: #ead2dc;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--clr-gray);
+}
+
+#team{
+    background-image: linear-gradient(var(--clr-primary), #ff93a3);
+    display: flex;
+    flex-direction: column;
+    border-top: #f8f8f8 solid 0.1rem;
+}
+
+#team > h1, #groups > h1, .intro h1{
+    font-size: xx-large;
+    align-self: center;
+    margin-top: 1rem;
+    color: #f8f8f8;
+}
+
+#groups > p, #team > p{
+    font-size: 1.25rem;
+    align-self: center;
+    text-align: center;
+    margin-top: 1rem;
+    color: #f8f8f8;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-inline: 1.5rem;
+    border-bottom: #f8f8f8 solid 0.1rem;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    background-image: url("imgs/community/community.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    padding-top: 10rem;
+}
+
+.intro h1{
+    color: white;
+    text-shadow: 2px 1px rgba(0,0,0,0.5);
+    padding-top: 1rem;
+    font-size: xx-large;
+}
+
+.intro div{
+    background: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.5));
+    padding-inline: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.container div{
+    background-color: white;
+    border: 0.1rem solid hotpink;
+    padding: 3rem;
+}
+
+.profile, .group{
+    box-shadow: 0 2px 8px 0 var(--clr-gray-light);
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image{
+    width: 8rem;
+    clip-path: circle(60px at center);
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+.description{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.btn{
+    width: 10rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4c2d64;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: #2f1b3d;
+    cursor: pointer;
+}
+
+.btn:focus{
+    background-color: #c7452e;
+}
+
+/*GROUPS*/
+#groups{
+    background-image: linear-gradient(#ff93a3, var(--clr-primary));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.group{
+    flex:1;
+    background: url("imgs/groups/bubbles.jpg");
+}
+
+@media (max-width: 45rem){
+    .container div{
+        padding: 2rem;
+    }
+
+    .intro{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 65em){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+}
+
+.test{
+    color: black;
+    background-color: blue;
+}

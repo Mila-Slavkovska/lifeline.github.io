@@ -1,0 +1,77 @@
+blockquote{
+    border-bottom: #f8f8f8 solid 2px;
+    background: #e55880;
+    font-size: xx-large;
+    color: #f8f8f8;
+    font-weight: bold;
+    position: center;
+    padding: 15rem 2rem;
+}
+
+blockquote span{
+    font-size: x-large;
+    padding-left: 1.25rem;
+    font-style: italic;
+}
+
+.articles, .content{
+    flex-direction: column;
+}
+
+.content{
+    padding: 2.5rem;
+    background-image: url("imgs/groups/bubbles.jpg");
+}
+
+.heading{
+    color: #24142f;
+    font-size: 2.7em;
+    text-align: center;
+}
+
+.articles{
+    background: #f8f8f8;
+    border: #e55880 solid 1px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.articles p{
+    color: #e55880;
+    padding-top: 1rem;
+}
+
+.advice a:hover{
+    text-decoration: underline;
+    color: #3d244f;
+}
+
+@media (max-width: 35rem) {
+    blockquote{
+
+    }
+
+    .content{
+        padding: 1rem;
+    }
+
+    .heading{
+        font-size: 2.9em;
+    }
+
+    .articles{
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 280px){
+    .articles{
+        font-size: 1.4em;
+    }
+
+    .articles a{
+        text-align: left;
+        font-size: 1.4rem;
+    }
+}

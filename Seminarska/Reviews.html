@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lifeline | Reviews</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="nav.css">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="reviews.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="menu.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <a class="skip-nav-link" href="#main-content">skip navigation</a>
+
+    <div class="primary-header flex"> <! Navigation Bar and Logo -->
+
+        <img src="imgs/logo.png" alt="Lifeline logo" id="logo">
+
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul aria-controls="primary-navigation" data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Advice.html">Advice</a></li>
+                <li><a href="Community.html">Community</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main id="main-content">
+    <div aria-hidden="true">
+        <button class="accessibility"  aria-expanded="false" aria-label="menu">
+            <img src="imgs/menu.png" alt="accessibility menu">
+        </button>
+
+        <div data-visible="false" id="primary-menu" class="primary-menu flex">
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-size-switch">
+                <label for="input-size-switch">Vision Impaired Profile</label>
+            </div><!-BIGGER FONT SIZE->
+
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-font-switch">
+                <label for="input-font-switch">Standard font</label>
+            </div><!-STANDARD FONT->
+
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-img-switch">
+                <label for="input-img-switch">Hide Images</label>
+            </div><!-HIDE IMGS->
+        </div>
+
+    </div> <!-ACCESSIBILITY MENU->
+
+    <section id="testimonials">
+        <div class="testimonial-heading">
+            <span>Comments</span>
+            <h1>Clients say</h1>
+            <p>
+                These quotes represent a few of the many positive reviews that we have received for our services. We don’t pay anyone to provide their review and they are all made voluntarily. Some people's experience receiving therapy with Lifeline might be different. If you would like to review your therapist, please send your review to
+                <a href="mailto:webmaster@example.com">contact@lifeline.com</a>.
+            </p>
+        </div>
+
+
+        <div class="testimonial-box-container">
+            <!-BOX 1 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar1.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>BarrackAnna</strong>
+                            <span>@b.anna</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>Kiera is versatile, funny, compassionate, and wise. The more sessions I share with her, the more confident I am in her ability to meet a range of different needs that I thought I'd need different therapists for</p>
+                </div>
+
+            </div>
+
+            <!-BOX 2 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar2.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>TomGobbler</strong>
+                            <span>@gobbler</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p> Thank you.</p>
+                </div>
+
+            </div>
+
+            <!-BOX 3 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar2.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>anonymous</strong>
+                            <span>@anonymous</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>Great to work with Hartley. Getting on track with specifics tailored to me.</p>
+                </div>
+
+            </div>
+
+            <!-BOX 4 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar1.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>MPC</strong>
+                            <span>@mpc</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>Great</p>
+                </div>
+
+            </div>
+
+            <!-BOX 5 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar1.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>SammyTor</strong>
+                            <span>@sammyt</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>Gillian was amazing. I enjoyed my time with her and she always understood my feelings and most importantly she validated them. Highly recommend!</p>
+                </div>
+
+            </div>
+
+            <!-BOX 6 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar3.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>Mia Locktea</strong>
+                            <span>@tea</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>The volunteers from the groups listened to my concerns and helped me work through solutions. They also offered outside books and resources for me to read and ponder.</p>
+                </div>
+
+            </div>
+
+            <!-BOX 7 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar2.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>wildflowerinception</strong>
+                            <span>@wildflowerinception</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>Carmel has helped me get through a difficult time and has guided me through challenges.</p>
+                </div>
+
+            </div>
+
+            <!-BOX 8 -->
+            <div class="testimonial-box">
+
+                <div class="box-top">
+
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="imgs/profiles/avatar3.jpg" alt="profile picture">
+                        </div>
+                        <div class="name-user">
+                            <strong>andomedakale</strong>
+                            <span>@andomedakale</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="client-comment">
+                    <p>Everyone in the group was nice and understanding. They were willing to listen and were very patient with me. They really created a safe space.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div>
+        <img src="imgs/logo.png" alt="Lifeline logo">
+        <span>
+            <a href="index.html">Home</a> /
+            <a href="Advice.html">Advice</a> /
+            <a href="Community.html">Community</a> /
+            <a href="Reviews.html">Reviews</a>
+        </span>
+    </div>
+    <p>Made by Lifeline Creative &copy; 2022</p>
+</footer>
+
+</body>
+</html>

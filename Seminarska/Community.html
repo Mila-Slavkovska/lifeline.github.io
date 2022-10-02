@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lifeline | Community</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="community.css">
+    <script src="menu3.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a class="skip-nav-link" href="#intro">skip navigation</a>
+
+    <div class="primary-header flex"> <! Navigation Bar and Logo -->
+
+        <img src="imgs/logo.png" alt="Lifeline logo" id="logo">
+
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul aria-controls="primary-navigation" data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Advice.html">Advice</a></li>
+                <li><a href="Community.html">Community</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+    <div aria-hidden="true">
+        <button class="accessibility"  aria-expanded="false" aria-label="menu">
+            <img src="imgs/menu.png" alt="accessibility menu">
+        </button>
+
+        <div data-visible="false" id="primary-menu" class="primary-menu flex">
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-size-switch">
+                <label for="input-size-switch">
+                    Vision Impaired Profile
+                </label>
+            </div><!-BIGGER FONT SIZE->
+
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-font-switch">
+                <label for="input-font-switch">Standard font</label>
+            </div><!-STANDARD FONT->
+
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-img-switch">
+                <label for="input-img-switch">Hide Images</label>
+            </div><!-HIDE IMGS->
+        </div>
+
+    </div> <!-ACCESSIBILITY MENU->
+
+    <section id="intro" class="intro">
+        <div>
+            <h1 id="test">Professionals and Volunteers</h1>
+        </div>
+    </section>
+
+    <section id="team">
+        <h1>The team</h1>
+        <p>
+            A very important part of our community are the following three therapists: Gillian Stokes, Carmel Hartley and Kiera Appleton.
+            These are professionals who have assisted students before and have agreed to work with us. They are kind and caring people and we encourage you to reach out to them if needed. We also recommend checking out their websites.
+        </p>
+        <div class="container flex">
+            <div class="profile">
+                <img src="imgs/profiles/avatar1.jpg" alt="profile picture" class="profile-image">
+                <h1 class="name">Gillian Stokes</h1>
+                <p class="description">
+                    I have had 8 years of experience practicing therapy with young adults. My approach is rooted in Biofeedback and Basement Therapy. Whether you're dealing with Panic, Phobia, or Geniuses, I am honored to pull up a chair and listen to your story. My therapy style is conversational and authentic. As a therapist, I seek to help you ***be your best*** self. I will meet you where you are on your journey. I believe you ARE worth it!!!.
+                </p>
+                <button role="button" class="btn">Contact Me</button>
+            </div>
+            <div class="profile">
+                <img src="imgs/profiles/avatar2.jpg" alt="profile picture" class="profile-image">
+                <h1 class="name">Carmel Hartley</h1>
+                <p class="description">
+                    I have had 8 years of experience practicing therapy with teens. My approach is rooted in Integrative Therapy and Predictability Therapy. Whether you're dealing with Emotion Regulation, Epigenetics, or Sleuths, we can work together. My therapy style is grounded and directive. As a therapist, I seek to help you re-discover your inherent strengths and skills. I will consider it an honor and a privilige to walk this journey with you. I believe establishing a strong therapeutic relationship is one of the most important foundations in the healing process.
+                </p>
+                <button role="button" class="btn">Contact Me</button>
+            </div>
+            <div class="profile">
+                <img src="imgs/profiles/avatar3.jpg" alt="profile picture" class="profile-image">
+                <h1 class="name">Kiera Appleton</h1>
+                <p class="description">
+                    I have extensive experience working with adolescents. My approach is rooted in Social Recovery Therapy and Registered Mink Therapy. Whether you're dealing with Friends, Pediatric Autoimmune Neuropsychiatric, or Batteries, you deserve a counselor who understands you. My therapy style is authentic and conversational. As a therapist, I work hard to create the sense of safety by talking 'with' you and not 'at' you. I will never judge; I understand. I believe everyone heals differently.
+                </p>
+                <button role="button" class="btn">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="groups">
+        <h1>Our groups</h1>
+        <p>
+            Below you will find a list of groups. Joining and talking to the members is completely free. Every group focuses on a specific problem you may have. All members of each group are either volunteers who have agreed to work with us or fellow students who have gone through these problems. Everyone is kind and understanding. There is no need to be scared. Remember they just want to help you, not judge you.
+        </p>
+        <div class="container flex">
+            <div class="group">
+                <h1 class="name" aria-label="group 1 out of 6. Dealing with burnout">Dealing with burnout </h1>
+                <p class="description">
+                    Burnout can happen to anyone and it’s ok. Talk to people who have gone through it and learn about their experience and how they dealt with it.
+                </p>
+                <button class="btn">Join</button>
+            </div>
+            <div class="group">
+                <h1 class="name" aria-label="group 2 out of 6. Family problems">Family problems </h1>
+                <p class="description">
+                    We can’t always control what happens in our family, but that doesn’t mean we are immune to it. Talk to people who can help you go through college regardless of family stress.
+                </p>
+                <button class="btn">Join</button>
+            </div>
+            <div class="group">
+                <h1 class="name" aria-label="group 3 out of 6. College and disability">College and disability </h1>
+                <p class="description">
+                    Going to college with any kind of disability isn't easy, but it can be done. Meet people with disabilities and learn about their experience. Remember your disability doesn’t define you.
+                </p>
+                <button class="btn">Join</button>
+            </div>
+        </div>
+
+        <div class="container flex">
+            <div class="group">
+                <h1 class="name" aria-label="group 4 out of 6. Dealing with stress">Dealing with stress </h1>
+                <p class="description">
+                    College is stressful for a lot of people, but it doesn’t have to be. Talk to people who can help you deal with this stress and give you advice based on their experience.
+                </p>
+                <button class="btn">Join</button>
+            </div>
+            <div class="group">
+                <h1 class="name" aria-label="group 5 out of 6. Financial problems">Financial problems </h1>
+                <p class="description">
+                    Our financial situation can cause a lot of stress. If you are struggling to get by, talk to people who are well informed about scholarships and financial aid for students. We want to help.
+                </p>
+                <button class="btn">Join</button>
+            </div>
+            <div class="group">
+                <h1 class="name" aria-label="group 6 out of 6. College and mental illness">College and mental illness </h1>
+                <p class="description">
+                    Our mental health affects our daily life. There is no need to be ashamed because of it. Talk to people who have had similar experiences. You will get through this.
+                </p>
+                <button class="btn">Join</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div>
+        <img src="imgs/logo.png" alt="Lifeline logo">
+        <span>
+            <a href="index.html">Home</a> /
+            <a href="Advice.html">Advice</a> /
+            <a href="Community.html">Community</a> /
+            <a href="Reviews.html">Reviews</a>
+        </span>
+    </div>
+    <p>Made by Lifeline Creative &copy; 2022</p>
+</footer>
+
+</body>
+</html>

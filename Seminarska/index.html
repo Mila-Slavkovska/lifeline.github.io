@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lifeline</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="index.css">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="nav.css">
+    <script src="menu.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header id="home-header">
+    <a class="skip-nav-link" href="#main-content">skip navigation</a>
+
+    <div class="primary-header flex"> <! Navigation Bar and Logo -->
+
+            <img src="imgs/logo.png" alt="Lifeline logo" id="logo">
+
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="menu">
+            <span class="sr-only">Menu</span>
+        </button>
+
+            <nav>
+                <ul aria-controls="primary-navigation" data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Advice.html">Advice</a></li>
+                    <li><a href="Community.html">Community</a></li>
+                    <li><a href="Reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+    </div>
+
+    <div id="welcome">
+        <div id="home">
+            <h2>Welcome to Lifeline!</h2>
+            <h3>We are a website ran by students for students</h3>
+        </div>
+    </div>
+</header>
+
+<main id="main-content">
+    <div aria-hidden="true">
+        <button class="accessibility"  aria-expanded="false" aria-label="menu">
+            <img src="imgs/menu.png" alt="accessibility menu">
+        </button>
+
+        <div data-visible="false" id="primary-menu" class="primary-menu flex">
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-size-switch">
+                <label for="input-size-switch">Vision Impaired Profile</label>
+            </div><!-BIGGER FONT SIZE->
+
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-font-switch">
+                <label for="input-font-switch">Standard font</label>
+            </div><!-STANDARD FONT->
+
+            <div class="wrapper-size-switch">
+                <input type="checkbox" id="input-img-switch">
+                <label for="input-img-switch">Hide Images</label>
+            </div><!-HIDE IMGS->
+        </div>
+
+    </div> <!-ACCESSIBILITY MENU->
+    
+    <section id="disclaimer"> <! DISCLAIMER ->
+        <h2><strong>DISCLAIMER</strong></h2>
+        <p>It is important to remember that we are students and not professionals. If you are dealing with a serious emergency please reach out to your local hotline as soon as possible!</p>
+    </section>
+
+    <section id="about"> <! About Us ->
+        <div>
+            <h3>About Us</h3>
+            <p>
+                Lifeline is a website ran by students for all students who might be struggling. We know that sometimes college can be like a stormy sea and it isn’t always easy to keep our heads above the rising tides.<br>
+                That is why our goal is to be the rope to which you can hold onto if you are having difficulties in today’s fierce waters and secure you to a safe place. We want to create a space where you can be heard and understood, and most importantly get the help you are looking for.<br>
+                Remember, you are not alone.
+            </p>
+        </div>
+    </section>
+
+    <div class="flex info">
+        <section id="what_we_do"> <! What do we actually do? ->
+            <h3>What do we actually do?</h3>
+            <p>
+                As students who might have gone through something similar to what you are dealing with now, we wish to share our experience and make your college life easier.<br>
+                We provide articles about mental health that might help you understand yourself better, but we also provide some tips and tricks for college that made our experience easier.
+            </p>
+        </section>
+
+        <section id="community"> <! A safe community ->
+            <h3>A safe community</h3>
+            <p>
+                Sometimes articles aren’t enough to help us navigate through unsafe waters. That is why we created a safe community where you can find kind and caring people who will be willing to listen. We have created multiple groups which focus on helping you deal with different problems such as financial problems, stress, anxiety, family problems etc. Our goal is to connect you with people who have gone through the same things as you have and help you navigate through it while staying anonymous.
+            </p>
+        </section>
+
+        <section id="affordable"> <! Affordable for everyone ->
+            <div>
+                <h3>Affordable for everyone</h3>
+                <p>
+                    We also work with a few professionals who agreed to give you special services which you can afford. But if that is not what you are looking for we have volunteers who you can talk to for free.
+                </p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <img src="imgs/logo.png" alt="Lifeline logo">
+        <nav>
+            <a href="index.html">Home</a> /
+            <a href="Advice.html">Advice</a> /
+            <a href="Community.html">Community</a> /
+            <a href="Reviews.html">Reviews</a>
+        </nav>
+    </div>
+    <p>Made by Lifeline Creative &copy; 2022</p>
+</footer>
+</body>
+</html>

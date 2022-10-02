@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skip-nav-link, .skip-to-menu{
+    z-index: 1000;
+    background: #e36047;
+    font-weight: bold;
+    color: #d6d9db;
+    padding: .5rem 1.5rem;
+    border-radius: 0 0 .25rem .25rem;
+    left: 0.5rem;
+    transition: transform 325ms ease-in;
+    position: absolute;
+    transform: translateY(-120%);
+}
+
+.skip-nav-link:focus, .skip-to-menu:focus{
+    transform: translateY(0);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.sr-only{
+    visibility: hidden;
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 3rem);
+}
+
+#logo{
+    margin: 1.2rem;
+    height: 4.25rem;
+    align-items: center;
+}
+
+.primary-header{
+    z-index: 990;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #271634;
+    border-radius: 0 0 0.5rem 0.5rem;
+    height: 4.25rem;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+.primary-navigation{
+    list-style: none;
+}
+
+.primary-navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.primary-navigation a:hover{
+    color: #fab2c7;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #271634;
+    padding: 2rem;
+}
+
+footer p{
+    align-self: center;
+    color: #9f69ce;
+}
+
+footer div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    color: #c08aee;
+}
+
+footer nav{
+    align-self: center;
+    font-size: 1.1rem;
+    color: #c08aee;
+}
+
+@media (min-width: 35em) {
+    .primary-navigation{
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 1rem;
+        padding-inline: clamp(3rem, 10vw, 10rem);
+    }
+}
+
+p{
+    font-family: Amarante sans-serif;
+}
+
+/*MENU*/
+
+.accessibility{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    background-image: url("imgs/menu.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    aspect-ratio: 1;
+    width: 60px;
+    height: 60px;
+    border: #f8f8f8 solid 2px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    right: 10px;
+    bottom: 10px;
+}
+
+.accessibility:focus{
+    border: #c7452e solid 4px;
+}
+
+.primary-menu{
+    --gap: 2em;
+
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 40%;
+
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+
+    /*background-color: #2f1b3f;  /*SMENI PODOCNA */
+    background: hsl(0 0% 0% / 0.1);
+    backdrop-filter: blur(1.7rem);
+
+    transform: translateX(100%);
+    transition: transform 450ms ease-in-out;
+}
+
+.primary-menu[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+#primary-menu div:first-child{
+    display: none;
+}
+
+.accessibility[aria-expanded="true"]{
+    background-image: url("imgs/icons8-xbox-x-white-50.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 35em) { /* MOBILE !!!!!!!!!!!! */
+    .primary-navigation{
+        --gap: 2em;
+
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 40%;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+
+        /*background-color: #2f1b3f;  /*SMENI PODOCNA */
+        background: hsl(0 0% 0% / 0.1);
+        backdrop-filter: blur(1.7rem);
+
+        transform: translateX(100%);
+        transition: transform 450ms ease-in-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-image: url("imgs/icons8-white-menu-30.png");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 1.5rem;
+        right: 2rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url("imgs/icons8-xbox-x-white-50.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .accessibility{
+        bottom: 5px;
+    }
+
+    footer div{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    footer img{
+        width: 200px;
+        align-self: center;
+    }
+}
+
+label{
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+/* FONT */
+
+.bigger-font{
+    font-size: 1.5rem;
+}
+
+.standard-font{
+    font-family: sans-serif;
+}
+
+.background{
+    background-image: none;
+}
+
